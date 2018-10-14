@@ -70,23 +70,14 @@ if __name__ == '__main__':
         <p><img alt="Купить Bitcoin онлайн" src="/media/uploads/admin/bitconnect_sec.png" style="width:100%" /></p>
     '''
 
-    crosslinks_arr = [
-        ['bitconnect', '/ru/bitconnect/'],
-        ['Bitcoin', '/ru/Bitcoin/'],
-        ['ICO', '/ru/ICO/'],
-    ]
-
     # p = TEXTLIB().crosslinker(text=text, rules=crosslinks_arr)
     # print(p)
 
     print('*'*100)
 
     proxy = [
-        'http://dmkyod:KfuhLOMHZG@109.237.104.29:24531',
-        # 'http://dmkyod:KfuhLOMHZG@109.248.234.21:24531', # not
-        # 'http://dmkyod:KfuhLOMHZG@93.57.136.148:24531', #not
-        'http://dmkyod:KfuhLOMHZG@91.197.3.157:24531',
-        'http://dmkyod:KfuhLOMHZG@91.107.125.110:24531',
+        'http://username:password@1.1.1.1:1234',
+        'http://username:password@1.1.1.1:1234',
     ]
 
     t = TEXTLIB().translator(is_html=True, text=text, lang_to='cn', proxy=proxy)
