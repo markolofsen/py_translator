@@ -54,6 +54,39 @@ translate [--flags] [source] dest
 | --translit         | Print out the transliteration of the text             |
 
 
+---
+
+# html translation
+
+### Python
+```python
+from py_translator import TEXTLIB
+s = TEXTLIB().translator(is_html=False, text='Hello my friend', lang_to='cn', proxy=False)
+print(s)
+```
+
+### With proxy
+```python
+from py_translator import TEXTLIB
+
+proxy = [
+    'http://username:password@1.1.1.1:1234',
+    'http://username:password@1.1.1.1:1234',
+]
+
+s = TEXTLIB().translator(is_html=False, text='Hello my friend', lang_to='cn', proxy=proxy)
+print(s)
+```
+
+### With multithreading
+##### with `massTranslator()`
+```python
+from py_translator import TEXTLIB
+s = TEXTLIB().massTranslator(is_html=False, text='Hello my friend', lang_to='cn', proxy=False)
+print(s)
+```
+
+---
 Examples
 --------
 
