@@ -1,5 +1,6 @@
 # from googletrans import Translator
-from py_translator import Translator
+# from py_translator import Translator
+from .client import Translator
 from bs4 import BeautifulSoup
 from langdetect import detect
 
