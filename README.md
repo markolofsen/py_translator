@@ -34,6 +34,17 @@ s = Translator().translate(text='Hello my friend', dest='es').text
 print(s)
 ```
 
+## With proxy
+```python3
+from py_translator import Translator
+proxy = {
+        'http': 'http://username:password@1.1.1.1:1234',
+        'https': 'http://username:password@1.1.1.1:1234',
+}
+s = Translator(proxies=proxy).translate(text='Hello my friend', dest='es').text
+print(s)
+```
+
 ## Shell
 ```python3
 translate [--flags] [source] dest
