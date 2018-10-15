@@ -1,7 +1,7 @@
-![py_translator](https://github.com/markolofsen/py_translator/blob/master/py_translator.png?raw=true)
-
 py_translator
 =========================
+
+[[TAG1]]
 
 The end goal is a simple application for translating text in the terminal.
 Text can be generated interactively or programmatically in the
@@ -24,7 +24,7 @@ Installation
 ### From PyPI with `pip`
 
 ```sh
-$ pip3 install py-translator==1.6.5
+$ pip3 install py-translator==[[VERSION]]
 ```
 
 ## Python
