@@ -1,6 +1,6 @@
 py_translator
 
-[![Google HTML translator](https://github.com/markolofsen/py_translator/blob/master/teaser.png?raw=true)](https://github.com/markolofsen/py_translator)
+[![Google HTML translator](https://raw.githubusercontent.com/markolofsen/py_translator/master/teaser.png)](https://github.com/markolofsen/py_translator)
 
 =========================
 
@@ -27,7 +27,7 @@ Installation
 ### From PyPI with `pip`
 
 ```sh
-$ pip3 install py_translator==1.8.4
+$ pip3 install py_translator==1.8.5
 ```
 
 ## Python
