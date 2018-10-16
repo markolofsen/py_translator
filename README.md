@@ -27,7 +27,7 @@ Installation
 ### From PyPI with `pip`
 
 ```sh
-$ pip3 install py_translator==1.5.9
+$ pip3 install py_translator==1.6.0
 ```
 
 ## Python
