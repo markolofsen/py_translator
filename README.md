@@ -5,7 +5,7 @@
 
 Sample variable for repo: [[any_repo_var]]
 
-Version = 0.0.2
+Version = 1.9.1
 Library name = py_translator
 Title = Google Translate API (Python 3)
 Keywords = Google, Cloude, API
@@ -13,7 +13,7 @@ Keywords = Google, Cloude, API
 ### Hot to install
 
 ```sh
-pip3 install py_translator==0.0.2
+pip3 install py_translator==1.9.1
 ```
                     
 
