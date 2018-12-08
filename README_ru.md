@@ -3,10 +3,9 @@
 
 ---
 
-Привет друг!
-Пример переменной для репо: [[any_repo_var]]
+Расширенная библиотека для перевода текста из Google Translate API.
 
-Версия = 1.9.4
+Версия = 1.9.5
 Название библиотеки = py_translator
 Название = Google Translate API (Python 3)
 Ключевые слова = Google, Cloude, API
@@ -14,7 +13,7 @@
 ### Горячая установка
 
 ```sh
-pip3 install py_translator==1.9.4
+pip3 install py_translator==1.9.5
 ```
 
 
@@ -60,6 +59,18 @@ print(s)
 ```
 
 
+
+### Как использовать переменные, которые не переведены?
+```python
+from py_translator import Translator, TextUtils
+private_key = "****"
+client_email = "****"
+text = "Hi, this is [[name]], waiting for $ [[number]] from you!"
+s = py_translator(private_key=private_key, client_email=client_email).translate(text="Hello new world!", target_language='ru')
+print(s.text)
+```
+
+** Результат: ** &quot;Привет, это [[name]], жду от тебя $ [[number]]!&quot;
 
 ---
 

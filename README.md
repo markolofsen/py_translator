@@ -3,10 +3,9 @@
 
 ---
 
-Hello friend!
-Sample variable for repo: [[any_repo_var]]
+Enriched library for translating text from the Google Translate API.
 
-Version = 1.9.4
+Version = 1.9.5
 Library name = py_translator
 Title = Google Translate API (Python 3)
 Keywords = Google, Cloude, API
@@ -14,7 +13,7 @@ Keywords = Google, Cloude, API
 ### Hot to install
 
 ```sh
-pip3 install py_translator==1.9.4
+pip3 install py_translator==1.9.5
 ```
                     
 
@@ -60,6 +59,18 @@ print(s)
 ```
 
 
+
+### How to use variables that are not translated?
+```python
+from py_translator import Translator, TextUtils
+private_key = "****"
+client_email = "****"
+text = "Hi, this is [[name]], waiting for $ [[number]] from you!"
+s = py_translator(private_key=private_key, client_email=client_email).translate(text="Hello new world!", target_language='ru')
+print(s.text)
+```
+
+**Result:** "Привет, это [[name]], жду от тебя $ [[number]]!"
 
 
 ---
