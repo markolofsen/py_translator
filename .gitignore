@@ -1,5 +1,6 @@
 
 # Created by https://www.gitignore.io/api/macos,node
+# Edit at https://www.gitignore.io/?templates=macos,node
 
 ### macOS ###
 # General
@@ -102,7 +103,12 @@ typings/
 .vuepress/dist
 
 # Serverless directories
-.serverless
+.serverless/
 
+# FuseBox cache
+.fusebox/
+
+#DynamoDB Local files
+.dynamodb/
 
 # End of https://www.gitignore.io/api/macos,node
