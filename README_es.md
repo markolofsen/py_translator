@@ -3,12 +3,35 @@
 
 ---
 
-¡Hola amigo! Variable de muestra para repo: [[any_repo_var]] Versión = 1.9.2 Nombre de biblioteca = py_translator Título = Google Translate API (Python 3) Palabras clave = Google, Cloude, API ### Hot to install ```sh
-pip3 install py_translator==1.9.2
-``` ### Cómo usar ```python
-from py_translator import py_translator
-py_translator().test('Hello')
+¡Hola amigo!
+Variable de muestra para repo: [[any_repo_var]]
+
+Versión = 1.9.3
+Nombre de la biblioteca = py_translator
+Título = Google Translate API (Python 3)
+Palabras clave = Google, Cloude, API
+
+### Caliente para instalar
+
+```sh
+pip3 install py_translator==1.9.3
 ```
+
+
+### Cómo utilizar
+
+```python
+from py_translator import py_translator
+
+private_key = '-----BEGIN PRIVATE KEY----- *********** -----END PRIVATE KEY-----'
+client_email = 'starting-account-***********.iam.gserviceaccount.com'
+
+s = py_translator(private_key=private_key, client_email=client_email).translate(text="Hello new world!", target_language='cn')
+print(s.text)
+
+```
+
+
 
 ---
 

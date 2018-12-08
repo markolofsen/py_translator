@@ -6,7 +6,7 @@
 Hello friend!
 Sample variable for repo: [[any_repo_var]]
 
-Version = 1.9.2
+Version = 1.9.3
 Library name = py_translator
 Title = Google Translate API (Python 3)
 Keywords = Google, Cloude, API
@@ -14,7 +14,7 @@ Keywords = Google, Cloude, API
 ### Hot to install
 
 ```sh
-pip3 install py_translator==1.9.2
+pip3 install py_translator==1.9.3
 ```
                     
 
@@ -22,7 +22,13 @@ pip3 install py_translator==1.9.2
 
 ```python
 from py_translator import py_translator
-py_translator().test('Hello')
+
+private_key = '-----BEGIN PRIVATE KEY----- *********** -----END PRIVATE KEY-----'
+client_email = 'starting-account-***********.iam.gserviceaccount.com'
+
+s = py_translator(private_key=private_key, client_email=client_email).translate(text="Hello new world!", target_language='cn')
+print(s.text)
+
 ```
                 
 
