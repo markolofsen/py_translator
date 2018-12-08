@@ -3,29 +3,12 @@
 
 ---
 
-Sample variable for repo: [[any_repo_var]]
-
-Version = 1.9.1
-Library name = py_translator
-Title = Google Translate API (Python 3)
-Keywords = Google, Cloude, API
-
-### Hot to install
-
-```sh
-pip3 install py_translator==1.9.1
-```
-                    
-
-### How to use
-
-```python
+¡Hola amigo! Variable de muestra para repo: [[any_repo_var]] Versión = 1.9.2 Nombre de biblioteca = py_translator Título = Google Translate API (Python 3) Palabras clave = Google, Cloude, API ### Hot to install ```sh
+pip3 install py_translator==1.9.2
+``` ### Cómo usar ```python
 from py_translator import py_translator
 py_translator().test('Hello')
 ```
-                
-
-    
 
 ---
 
