@@ -3,10 +3,9 @@
 
 ---
 
-**Enriched library for translating text from the Google Translate API.
-**
+# Enriched library for translating text from the Google Translate API.
 
-Version = 1.9.6
+Version = 1.9.7
 Library name = py_translator
 Title = Google Translate API (Python 3)
 Keywords = Google, Cloude, API
@@ -14,7 +13,7 @@ Keywords = Google, Cloude, API
 ### Hot to install
 
 ```sh
-pip3 install py_translator==1.9.6
+pip3 install py_translator==1.9.7
 ```
                     
 
@@ -24,31 +23,24 @@ pip3 install py_translator==1.9.6
 2. Download a private key as JSON-file.
 3. Copy the variables "private_key" and "client_email" from JSON-file
 
-
-### Connection example
-```python
-from py_translator import Translator, TextUtils
-
-private_key = '-----BEGIN PRIVATE KEY----- *********** -----END PRIVATE KEY-----'
-client_email = 'starting-account-***********.iam.gserviceaccount.com'
-```
-
 ### Sample 1
 ```python
+import os
 from py_translator import Translator, TextUtils
-private_key = "****"
-client_email = "****"
-s = py_translator(private_key=private_key, client_email=client_email).translate(text="Hello new world!", target_language='cn')
+creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
+
+s = Translate(creds_path=creds_path).translate(text="Hello new world!", target_language='cn')
 print(s.text)
 ```
 
 ### Sample 2
 ```python
+import os
 from py_translator import Translator, TextUtils
-private_key = "****"
-client_email = "****"
+creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
+
 html_str = '<p>Russian word</p>'
-s = Translator(private_key=private_key, client_email=client_email).html(text=html_str, target_language='ru')
+s = Translator(creds_path=creds_path).html(text=html_str, target_language='ru')
 print(s.text)
 ```
 
@@ -63,15 +55,16 @@ print(s)
 
 ### How to use variables that are not translated?
 ```python
+import os
 from py_translator import Translator, TextUtils
-private_key = "****"
-client_email = "****"
+creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
+
 text = "Hi, this is [[name]], waiting for $ [[number]] from you!"
-s = py_translator(private_key=private_key, client_email=client_email).translate(text="Hello new world!", target_language='ru')
+s = Translator(creds_path=creds_path).translate(text="Hello new world!", target_language='ru')
 print(s.text)
 ```
 
-**Result:** "Привет, это [[name]], жду от тебя $ [[number]]!"
+Result: "Привет, это [[name]], жду от тебя $ [[number]]!"
 
 
 ---

@@ -3,75 +3,15 @@
 
 ---
 
-** Biblioteca enriquecida para traducir texto de la API de Google Translate.
-**
-
-Versión = 1.9.6
-Nombre de la biblioteca = py_translator
-Título = Google Translate API (Python 3)
-Palabras clave = Google, Cloude, API
-
-### Caliente para instalar
-
-```sh
-pip3 install py_translator==1.9.6
-```
-
-
-## Cómo utilizar
-
-1. Habilite el [Cloud Translation API] (https://cloud.google.com/translate/docs/quickstart?csw=1)
-2. Descargue una clave privada como archivo JSON.
-3. Copie las variables &quot;private_key&quot; y &quot;client_email&quot; del archivo JSON
-
-
-### Ejemplo de conexión
-```python
+# Biblioteca enriquecida para traducir texto de la API de Google Translate. Versión = [[VERSIÓN]] Nombre de la biblioteca = py_translator Título = [[TÍTULO]] Palabras clave = [[PALABRAS CLAVE]] ### Instalación rápida [[código_0]] ## Cómo usar 1. Habilitar la [ API de traducción en la nube] (https://cloud.google.com/translate/docs/quickstart?csw=1) 2. Descargue una clave privada como archivo JSON. 3. Copie las variables &quot;private_key&quot; y &quot;client_email&quot; del archivo JSON ### Muestra 1 [[código_1]] ### Muestra 2 [[código_2]] ### Muestra 2 [[código_3]] ### Cómo ¿Usar variables que no están traducidas? ```python
+import os
 from py_translator import Translator, TextUtils
+creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
 
-private_key = '-----BEGIN PRIVATE KEY----- *********** -----END PRIVATE KEY-----'
-client_email = 'starting-account-***********.iam.gserviceaccount.com'
-```
-
-### Muestra 1
-```python
-from py_translator import Translator, TextUtils
-private_key = "****"
-client_email = "****"
-s = py_translator(private_key=private_key, client_email=client_email).translate(text="Hello new world!", target_language='cn')
-print(s.text)
-```
-
-### Muestra 2
-```python
-from py_translator import Translator, TextUtils
-private_key = "****"
-client_email = "****"
-html_str = '<p>Russian word</p>'
-s = Translator(private_key=private_key, client_email=client_email).html(text=html_str, target_language='ru')
-print(s.text)
-```
-
-### Muestra 2
-```python
-from py_translator import TextUtils
-s = TextUtils().detect('Detect my language please...')
-print(s)
-```
-
-
-
-### ¿Cómo usar variables que no están traducidas?
-```python
-from py_translator import Translator, TextUtils
-private_key = "****"
-client_email = "****"
 text = "Hi, this is [[name]], waiting for $ [[number]] from you!"
-s = py_translator(private_key=private_key, client_email=client_email).translate(text="Hello new world!", target_language='ru')
+s = Translator(creds_path=creds_path).translate(text="Hello new world!", target_language='ru')
 print(s.text)
-```
-
-** Resultado: ** &quot;Привет, это [[name]], жду от тебя $ [[number]]!&quot;
+``` Resultado: &quot;Привет, это [[name]], жду от тебя $ [[number]]!&quot;
 
 ---
 
