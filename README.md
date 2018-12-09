@@ -3,9 +3,9 @@
 
 ---
 
-# Yes. Enriched library for translating text from the Google Translate API.
+# Enriched library for translating text from the Google Translate API (for Python 3)!
 
-Version = 2.0.0
+Version = 2.0.1
 Library name = py_translator
 Title = Google Translate API (Python 3)
 Keywords = Google, Cloude, API
@@ -13,7 +13,7 @@ Keywords = Google, Cloude, API
 ### Hot to install
 
 ```sh
-pip3 install py_translator==2.0.0
+pip3 install py_translator==2.0.1
 ```
                     
 
