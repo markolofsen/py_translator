@@ -5,7 +5,7 @@
 
 # Расширенная библиотека для перевода текста из Google Translate API (для Python 3)!
 
-Версия библиотеки = 2.0.8
+Версия библиотеки = 2.0.9
 
 Название библиотеки = py_translator
 
@@ -17,7 +17,7 @@
 ### Горячая установка
 
 ```sh
-pip3 install py_translator==2.0.8
+pip3 install py_translator==2.0.9
 ```
 
 
