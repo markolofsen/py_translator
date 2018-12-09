@@ -1,23 +1,20 @@
-<p align="center"><img src="https://github.com/markolofsen/py_translator//blob/master/.banners/banner_ru.png?raw=1" /></p>
-<p align="center"><b>Languages:</b><br /><a href="https://github.com/markolofsen/py_translator/blob/master/README.md">English</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_es.md">Spanish</a> | <b>Russian</b></p>
+<p align="center"><b>🛠️ Этот репозиторий был создан с использованием <a href="https://gitupload.com">GitUpload</a>.</b></p>
+<p align="center"><a href="https://kupi.net"><img src="https://github.com/markolofsen/py_translator//blob/master/.banners/banner_ru.png?raw=1" /></a></p>
+<p align="center"><b>Languages:</b><br /><a href="https://github.com/markolofsen/py_translator/blob/master/README_de.md">🇩🇪 Deutsch</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README.md">🇬🇧 English</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_es.md">🇪🇸 Spanish</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_fr.md">🇫🇷 French</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_it.md">🇮🇹 Italian</a> | <b>🇷🇺 Russian</b></p>
 
 ---
 
 # Расширенная библиотека для перевода текста из Google Translate API (для Python 3)!
 
-Версия библиотеки = 2.0.9
-
-Название библиотеки = py_translator
-
-Название = Google Translate API (Python 3)
-
-Ключевые слова = Google, Cloude, API
-
+Версия библиотеки = 2.1.0 <br />
+Название библиотеки = py_translator <br />
+Название = Google Translate API (Python 3) <br />
+Ключевые слова = Google, Cloude, API <br />
 
 ### Горячая установка
 
 ```sh
-pip3 install py_translator==2.0.9
+pip3 install py_translator==2.1.0
 ```
 
 
@@ -63,12 +60,13 @@ import os
 from py_translator import Translator, TextUtils
 creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
 
-text = "Hi, this is [[name]], waiting for $ 1 from you!"
+text = "Hi, this is , waiting for $ [[number]] from you!"
 s = Translator(creds_path=creds_path).translate(text="Hello new world!", target_language='ru')
 print(s.text)
 ```
 
-Результат: «Привет, это [[name]], жду от тебя $ 1!»
+Результат: «Привет, это , жду от тебя $ [[number]]!»
 
 ---
 
+<p align="center"><b>🛠️ Этот репозиторий был создан с использованием <a href="https://gitupload.com">GitUpload</a>.</b></p>
