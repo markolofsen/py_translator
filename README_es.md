@@ -3,7 +3,72 @@
 
 ---
 
-# ¡Biblioteca enriquecida para traducir texto de la API de Google Translate (para Python 3)!<br /><br />Versión de la biblioteca = 2.0.7<br />Nombre de la biblioteca = py_translator<br />Título = Google Translate API (Python 3)<br />Palabras clave = Google, Cloude, API<br /><br />### Caliente para instalar<br /><br />```sh<br />pip3 install py_translator==2.0.7<br />```<br /><br /><br />## Cómo utilizar<br /><br />1. Habilite el [Cloud Translation API] (https://cloud.google.com/translate/docs/quickstart?csw=1)<br />2. Descargue una clave privada como archivo JSON.<br />3. Especifique la ruta al archivo en la variable &quot;creds_path&quot;<br /><br />### Muestra 1<br />```python<br />import os<br />from py_translator import Translator, TextUtils<br />creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')<br /><br />s = Translate(creds_path=creds_path).translate(text="Hello new world!", target_language='cn')<br />print(s.text)<br />```<br /><br />### Muestra 2<br />```python<br />import os<br />from py_translator import Translator, TextUtils<br />creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')<br /><br />html_str = '<p>Russian word</p>'<br />s = Translator(creds_path=creds_path).html(text=html_str, target_language='ru')<br />print(s.text)<br />```<br /><br />### Muestra 2<br />```python<br />from py_translator import TextUtils<br />s = TextUtils().detect('Detect my language please...')<br />print(s)<br />```<br /><br /><br /><br />### ¿Usando alguna variable sin traducción? - fácil!<br />```python<br />import os<br />from py_translator import Translator, TextUtils<br />creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')<br /><br />text = "Hi, this is [[name]], waiting for $ 1 from you!"<br />s = Translator(creds_path=creds_path).translate(text="Hello new world!", target_language='ru')<br />print(s.text)<br />```<br /><br />Resultado: «Привет, это [[name]], жду от тебя $ 1!»
+# ¡Biblioteca enriquecida para traducir texto de la API de Google Translate (para Python 3)!
+
+Versión de la biblioteca = 2.0.8
+
+Nombre de la biblioteca = py_translator
+
+Título = Google Translate API (Python 3)
+
+Palabras clave = Google, Cloude, API
+
+
+### Caliente para instalar
+
+```sh
+pip3 install py_translator==2.0.8
+```
+
+
+## Cómo utilizar
+
+1. Habilite el [Cloud Translation API] (https://cloud.google.com/translate/docs/quickstart?csw=1)
+2. Descargue una clave privada como archivo JSON.
+3. Especifique la ruta al archivo en la variable &quot;creds_path&quot;
+
+### Muestra 1
+```python
+import os
+from py_translator import Translator, TextUtils
+creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
+
+s = Translate(creds_path=creds_path).translate(text="Hello new world!", target_language='cn')
+print(s.text)
+```
+
+### Muestra 2
+```python
+import os
+from py_translator import Translator, TextUtils
+creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
+
+html_str = '<p>Russian word</p>'
+s = Translator(creds_path=creds_path).html(text=html_str, target_language='ru')
+print(s.text)
+```
+
+### Muestra 2
+```python
+from py_translator import TextUtils
+s = TextUtils().detect('Detect my language please...')
+print(s)
+```
+
+
+
+### ¿Usando alguna variable sin traducción? - fácil!
+```python
+import os
+from py_translator import Translator, TextUtils
+creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
+
+text = "Hi, this is [[name]], waiting for $ 1 from you!"
+s = Translator(creds_path=creds_path).translate(text="Hello new world!", target_language='ru')
+print(s.text)
+```
+
+Resultado: «Привет, это [[name]], жду от тебя $ 1!»
 
 ---
 
