@@ -3,14 +3,38 @@
 
 ---
 
-# Biblioteca enriquecida para traducir texto de la API de Google Translate. Versión = [[VERSIÓN]] Nombre de la biblioteca = py_translator Título = [[TÍTULO]] Palabras clave = [[PALABRAS CLAVE]] ### Instalación rápida [[código_0]] ## Cómo usar 1. Habilitar la [ API de traducción en la nube] (https://cloud.google.com/translate/docs/quickstart?csw=1) 2. Descargue una clave privada como archivo JSON. 3. Especifique la ruta al archivo en la variable &quot;creds_path&quot; ### Sample 1 ```python
+# Biblioteca enriquecida para traducir texto de la API de Google Translate.
+
+Versión = 1.9.9
+Nombre de la biblioteca = py_translator
+Título = Google Translate API (Python 3)
+Palabras clave = Google, Cloude, API
+
+### Caliente para instalar
+
+```sh
+pip3 install py_translator==1.9.9
+```
+
+
+## Cómo utilizar
+
+1. Habilite el [Cloud Translation API] (https://cloud.google.com/translate/docs/quickstart?csw=1)
+2. Descargue una clave privada como archivo JSON.
+3. Especifique la ruta al archivo en la variable &quot;creds_path&quot;
+
+### Muestra 1
+```python
 import os
 from py_translator import Translator, TextUtils
 creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
 
 s = Translate(creds_path=creds_path).translate(text="Hello new world!", target_language='cn')
 print(s.text)
-``` ### Sample 2 ```python
+```
+
+### Muestra 2
+```python
 import os
 from py_translator import Translator, TextUtils
 creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
@@ -18,11 +42,19 @@ creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
 html_str = '<p>Russian word</p>'
 s = Translator(creds_path=creds_path).html(text=html_str, target_language='ru')
 print(s.text)
-``` ### Sample 2 ```python
+```
+
+### Muestra 2
+```python
 from py_translator import TextUtils
 s = TextUtils().detect('Detect my language please...')
 print(s)
-``` ### Cómo usar variables que no estan traducidos? ```python
+```
+
+
+
+### ¿Usando alguna variable sin traducción? - fácil!
+```python
 import os
 from py_translator import Translator, TextUtils
 creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
@@ -30,7 +62,9 @@ creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
 text = "Hi, this is [[name]], waiting for $ [[number]] from you!"
 s = Translator(creds_path=creds_path).translate(text="Hello new world!", target_language='ru')
 print(s.text)
-``` Resultado: &quot;Привет, это [[name]], жду от тебя $ [[number]]!&quot;
+```
+
+Resultado: «Привет, это [[name]], жду от тебя $ [[number]]!»
 
 ---
 

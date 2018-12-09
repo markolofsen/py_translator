@@ -9,23 +9,23 @@ class Translator(object):
 
     translate_client = False
 
-    def __init__(self, private_key, client_email):
-        auth_arr = {
-            "type": "service_account",
-            "project_id": False,
-            "private_key_id": False,
-            "private_key": private_key,
-            "client_email": client_email,
-            "client_id": False,
-            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-            "token_uri": "https://oauth2.googleapis.com/token",
-            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-            "client_x509_cert_url": False
-        }
+    def __init__(self, creds_path):
+        # auth_arr = {
+        #     "type": "service_account",
+        #     "project_id": False,
+        #     "private_key_id": False,
+        #     "private_key": private_key,
+        #     "client_email": client_email,
+        #     "client_id": False,
+        #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        #     "token_uri": "https://oauth2.googleapis.com/token",
+        #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        #     "client_x509_cert_url": False
+        # }
 
-        creds_path = os.path.join(BASE_DIR, 'creds_tmp.json')
-        with open(creds_path, 'w') as outfile:
-            json.dump(auth_arr, outfile)
+        # creds_path = os.path.join(BASE_DIR, 'creds_tmp.json')
+        # with open(creds_path, 'w') as outfile:
+        #     json.dump(auth_arr, outfile)
 
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = creds_path
         self.translate_client = translate.Client()

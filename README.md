@@ -5,7 +5,7 @@
 
 # Enriched library for translating text from the Google Translate API.
 
-Version = 1.9.8
+Version = 1.9.9
 Library name = py_translator
 Title = Google Translate API (Python 3)
 Keywords = Google, Cloude, API
@@ -13,7 +13,7 @@ Keywords = Google, Cloude, API
 ### Hot to install
 
 ```sh
-pip3 install py_translator==1.9.8
+pip3 install py_translator==1.9.9
 ```
                     
 
@@ -53,7 +53,7 @@ print(s)
 
 
 
-### How to use variables that are not translated?
+### Using any variables without translation? — Easy!
 ```python
 import os
 from py_translator import Translator, TextUtils
@@ -64,7 +64,7 @@ s = Translator(creds_path=creds_path).translate(text="Hello new world!", target_
 print(s.text)
 ```
 
-Result: "Привет, это [[name]], жду от тебя $ [[number]]!"
+Result: «Привет, это [[name]], жду от тебя $ [[number]]!»
 
 
 ---
