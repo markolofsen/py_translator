@@ -5,7 +5,7 @@
 
 # Enriched library for translating text from the Google Translate API.
 
-Version = 1.9.7
+Version = 1.9.8
 Library name = py_translator
 Title = Google Translate API (Python 3)
 Keywords = Google, Cloude, API
@@ -13,7 +13,7 @@ Keywords = Google, Cloude, API
 ### Hot to install
 
 ```sh
-pip3 install py_translator==1.9.7
+pip3 install py_translator==1.9.8
 ```
                     
 
@@ -21,7 +21,7 @@ pip3 install py_translator==1.9.7
 
 1. Enable the [Cloud Translation API](https://cloud.google.com/translate/docs/quickstart?csw=1)
 2. Download a private key as JSON-file.
-3. Copy the variables "private_key" and "client_email" from JSON-file
+3. Specify path to the file in variable "creds_path"
 
 ### Sample 1
 ```python

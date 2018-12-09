@@ -3,9 +3,9 @@
 
 ---
 
-# Расширенная библиотека для перевода текста из Google Translate API. Версия = 1.9.7 Имя библиотеки = py_translator Title = Google Translate API (Python 3) Keywords = Google, Cloude, API ### Горячая установка ```sh
-pip3 install py_translator==1.9.7
-``` ## Как использовать 1. Включите [ Cloud Translation API] (https://cloud.google.com/translate/docs/quickstart?csw=1) 2. Загрузите закрытый ключ в виде JSON-файла. 3. Скопируйте переменные &quot;private_key&quot; и &quot;client_email&quot; из файла JSON ### Пример 1 ```python
+# Расширенная библиотека для перевода текста из Google Translate API. Версия = 1.9.8 Имя библиотеки = py_translator Title = Google Translate API (Python 3) Keywords = Google, Cloude, API ### Горячая установка ```sh
+pip3 install py_translator==1.9.8
+``` ## Как использовать 1. Включите [ Cloud Translation API] (https://cloud.google.com/translate/docs/quickstart?csw=1) 2. Загрузите закрытый ключ в виде JSON-файла. 3. Укажите путь к файлу в переменной &quot;creds_path&quot; ### Пример 1 ```python
 import os
 from py_translator import Translator, TextUtils
 creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
@@ -24,7 +24,7 @@ print(s.text)
 from py_translator import TextUtils
 s = TextUtils().detect('Detect my language please...')
 print(s)
-``` ### How использовать переменные, которые не переведены? ```python
+``` ### Как использовать переменные, которые не переведены? ```python
 import os
 from py_translator import Translator, TextUtils
 creds_path = os.path.join(os.path.dirname(__file__), 'creds.json')
