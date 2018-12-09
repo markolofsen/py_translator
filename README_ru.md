@@ -3,9 +3,9 @@
 
 ---
 
-# Расширенная библиотека для перевода текста из Google Translate API.
+# Да. Расширенная библиотека для перевода текста из Google Translate API.
 
-Версия = 1.9.9
+Версия = 2.0.0
 Название библиотеки = py_translator
 Название = Google Translate API (Python 3)
 Ключевые слова = Google, Cloude, API
@@ -13,7 +13,7 @@
 ### Горячая установка
 
 ```sh
-pip3 install py_translator==1.9.9
+pip3 install py_translator==2.0.0
 ```
 
 
