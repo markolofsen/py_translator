@@ -4,7 +4,7 @@
 
 ---
 
-Version = 2.1.3 <br />
+Version = 2.1.4 <br />
 Bibliotheksname = py_translator <br />
 Titel = Free Google Translate API <br />
 Schlüsselwörter = Google API Cloud Translate <br />
@@ -12,7 +12,10 @@ Schlüsselwörter = Google API Cloud Translate <br />
 ### Info
 Das Endziel ist eine einfache Anwendung zum Übersetzen von Text im Terminal. Text kann interaktiv oder programmgesteuert in der Shell-Umgebung generiert werden. Über Befehlszeilenargumente, Dateideskriptoren oder Pipes werden übersetzte Ausgaben generiert, die in eine Datei geleitet oder auf dem Terminal angezeigt werden können.
 
-[b] Sie können unsere zusätzliche Bibliothek auch mit der Google Cloud-API überprüfen. [/b] https://pypi.org/project/google-api-translate/
+<b>Sie können auch unsere zusätzliche Bibliothek mit der Google Cloud-API überprüfen</b>
+
+https://pypi.org/project/google-api-translate/
+
 
 ### Eigenschaften
 * Für Python 3 gemacht, funktioniert aber immer noch mit Python 2
@@ -24,7 +27,7 @@ Das Endziel ist eine einfache Anwendung zum Übersetzen von Text im Terminal. Te
 ### Heiß zu installieren
 
 ```sh
-pip3 install py_translator==2.1.3
+pip3 install py_translator==2.1.4
 ```
 
 
@@ -62,7 +65,16 @@ print(s)
 ```
 
 ### Mit Proxy
-(fünfzehn)]
+```python
+from py_translator import TEXTLIB
+proxy = [
+    'http://username:password@1.1.1.1:1234',
+    'http://username:password@1.1.1.1:1234',
+]
+
+s = TEXTLIB().translator(is_html=False, text='Hello my friend', lang_to='cn', proxy=proxy)
+print(s)
+```
 
 ### Mit Multithreading
 ```python
@@ -76,11 +88,7 @@ print(s)
 --------
 # Beispiele
 Hallo Welt vom Englischen zum Traditionellen Chinesisch
-```sh
-$ translate en zh-TW <<< 'Hello World!'
-你好世界！
-Just as easily specify a source language by providing it as first argument
-```
+(fünfzehn)]
 
 ```sh
 #Translate Hello from French to English

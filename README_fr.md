@@ -4,7 +4,7 @@
 
 ---
 
-Version = 2.1.3 <br />
+Version = 2.1.4 <br />
 Nom de la bibliothèque = py_translator <br />
 Titre = Free Google Translate API <br />
 Mots-clés = Google API Cloud Translate <br />
@@ -12,7 +12,10 @@ Mots-clés = Google API Cloud Translate <br />
 ### Info
 L&#39;objectif final est une application simple pour traduire du texte dans le terminal. Le texte peut être généré de manière interactive ou par programme dans l&#39;environnement shell. Par le biais d’arguments de ligne de commande, de descripteurs de fichier ou de canaux générant une sortie traduite pouvant être redirigée vers un fichier ou affichée sur le terminal.
 
-[b] Vous pouvez également consulter notre bibliothèque supplémentaire avec l&#39;API Google Cloud [/b] https://pypi.org/project/google-api-translate/.
+<b>Vous pouvez également consulter notre bibliothèque supplémentaire avec Google Cloud API.</b>
+
+https://pypi.org/project/google-api-translate/
+
 
 ### Caractéristiques
 * Conçu pour Python 3 mais fonctionne toujours sur Python 2
@@ -23,7 +26,9 @@ L&#39;objectif final est une application simple pour traduire du texte dans le t
 
 ### Chaud à installer
 
-(dix)]
+```sh
+pip3 install py_translator==2.1.4
+```
 
 
 ### Comment utiliser
@@ -34,15 +39,7 @@ print(s)
 ```
 
 ### Avec proxy
-```python
-from py_translator import Translator
-proxy = {
-        'http': 'http://username:password@1.1.1.1:1234',
-        'https': 'http://username:password@1.1.1.1:1234',
-}
-s = Translator(proxies=proxy).translate(text='Hello my friend', dest='es').text
-print(s)
-```
+(dix)]
 
 ### Coquille
 ```shell

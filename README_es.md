@@ -4,7 +4,7 @@
 
 ---
 
-Versión = 2.1.3 <br />
+Versión = 2.1.4 <br />
 Nombre de la biblioteca = py_translator <br />
 Título = Free Google Translate API <br />
 Palabras clave = Google API Cloud Translate <br />
@@ -12,7 +12,10 @@ Palabras clave = Google API Cloud Translate <br />
 ### Info
 El objetivo final es una aplicación sencilla para traducir texto en el terminal. El texto se puede generar de forma interactiva o programática en el entorno de shell. A través de la línea de comandos, los descriptores de archivos o los conductos generan resultados traducidos que se pueden canalizar a un archivo o mostrar en el terminal.
 
-[b] Además, puede consultar nuestra biblioteca adicional con Google Cloud API [/b] https://pypi.org/project/google-api-translate/
+<b>Además, puede consultar nuestra biblioteca adicional con Google Cloud API</b>
+
+https://pypi.org/project/google-api-translate/
+
 
 ### Caracteristicas
 * Hecho para Python 3 pero aún funciona en Python 2
@@ -24,7 +27,7 @@ El objetivo final es una aplicación sencilla para traducir texto en el terminal
 ### Caliente para instalar
 
 ```sh
-pip3 install py_translator==2.1.3
+pip3 install py_translator==2.1.4
 ```
 
 
@@ -74,7 +77,13 @@ print(s)
 ```
 
 ### con multiproceso
-(dieciséis)]
+```python
+from py_translator import TEXTLIB
+
+#with massTranslator()
+s = TEXTLIB().massTranslator(is_html=False, text='Hello my friend', lang_to='cn', proxy=False)
+print(s)
+```
 
 --------
 # Ejemplos
@@ -85,11 +94,7 @@ $ translate en zh-TW <<< 'Hello World!'
 Just as easily specify a source language by providing it as first argument
 ```
 
-```sh
-#Translate Hello from French to English
-$ translate fr en <<< 'Bonjour, comment allez-vous!'
-Hello, how are you?
-```
+(dieciséis)]
 
 ### Detección inteligente de lenguaje
 La omisión del idioma de origen intentará detectarlo en función del contenido del texto
