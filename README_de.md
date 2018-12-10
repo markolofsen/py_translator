@@ -4,7 +4,7 @@
 
 ---
 
-Version = 2.1.6 <br />
+Version = 2.1.7 <br />
 Bibliotheksname = py_translator <br />
 Titel = Free Google Translate API <br />
 Schlüsselwörter = Google API Cloud Translate, google api translate free <br />
@@ -27,7 +27,7 @@ https://pypi.org/project/google-api-translate/
 ### Heiß zu installieren
 
 ```sh
-pip3 install py_translator==2.1.6
+pip3 install py_translator==2.1.7
 ```
 
 
