@@ -3,5 +3,6 @@ __all__ = 'Translator',
 # __version__ = '2.3.0'
 
 
-from .connector import Translator
-from .utils import TextUtils
+from client import Translator
+from .constants import LANGCODES, LANGUAGES
+from .html_connector import TEXTLIB
