@@ -4,7 +4,7 @@
 
 ---
 
-Versione = 2.1.5 <br />
+Versione = 2.1.6 <br />
 Nome libreria = py_translator <br />
 Titolo = Free Google Translate API <br />
 Parole chiave = Google API Cloud Translate, google api translate free <br />
@@ -27,7 +27,7 @@ https://pypi.org/project/google-api-translate/
 ### Caldo da installare
 
 ```sh
-pip3 install py_translator==2.1.5
+pip3 install py_translator==2.1.6
 ```
 
 
@@ -159,8 +159,11 @@ BUY
 ```
 
 # Supporto
-Ecco un elenco di piattaforme Python ufficialmente supportate.
 Python 3
+
+# Documentazione
+Trova la documentazione più recente http://pythonhosted.org/py-translate/
+
 
 ---
 

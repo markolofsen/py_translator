@@ -4,7 +4,7 @@
 
 ---
 
-Version = 2.1.5 <br />
+Version = 2.1.6 <br />
 Bibliotheksname = py_translator <br />
 Titel = Free Google Translate API <br />
 Schlüsselwörter = Google API Cloud Translate, google api translate free <br />
@@ -27,7 +27,7 @@ https://pypi.org/project/google-api-translate/
 ### Heiß zu installieren
 
 ```sh
-pip3 install py_translator==2.1.5
+pip3 install py_translator==2.1.6
 ```
 
 
@@ -155,8 +155,11 @@ BUY
 ```
 
 # Unterstützung
-Hier ist eine Liste von Python-Plattformen, die offiziell unterstützt werden.
 Python 3
+
+# Dokumentation
+Die neueste Dokumentation finden Sie unter http://pythonhosted.org/py-translate/.
+
 
 ---
 
