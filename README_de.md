@@ -4,7 +4,7 @@
 
 ---
 
-Version = 2.1.2 <br />
+Version = 2.1.3 <br />
 Bibliotheksname = py_translator <br />
 Titel = Free Google Translate API <br />
 Schlüsselwörter = Google API Cloud Translate <br />
@@ -24,7 +24,7 @@ Das Endziel ist eine einfache Anwendung zum Übersetzen von Text im Terminal. Te
 ### Heiß zu installieren
 
 ```sh
-pip3 install py_translator==2.1.2
+pip3 install py_translator==2.1.3
 ```
 
 

@@ -4,7 +4,7 @@
 
 ---
 
-Версия = 2.1.2 <br />
+Версия = 2.1.3 <br />
 Название библиотеки = py_translator <br />
 Название = Free Google Translate API <br />
 Ключевые слова = Google API Cloud Translate <br />
@@ -24,7 +24,7 @@
 ### Горячая установка
 
 ```sh
-pip3 install py_translator==2.1.2
+pip3 install py_translator==2.1.3
 ```
 
 

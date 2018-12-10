@@ -4,7 +4,7 @@
 
 ---
 
-Version = 2.1.2 <br />
+Version = 2.1.3 <br />
 Nom de la bibliothèque = py_translator <br />
 Titre = Free Google Translate API <br />
 Mots-clés = Google API Cloud Translate <br />

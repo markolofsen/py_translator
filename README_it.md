@@ -4,7 +4,7 @@
 
 ---
 
-Versione = 2.1.2 <br />
+Versione = 2.1.3 <br />
 Nome libreria = py_translator <br />
 Titolo = Free Google Translate API <br />
 Parole chiave = Google API Cloud Translate <br />
@@ -24,7 +24,7 @@ L&#39;obiettivo finale è una semplice applicazione per la traduzione di testo n
 ### Caldo da installare
 
 ```sh
-pip3 install py_translator==2.1.2
+pip3 install py_translator==2.1.3
 ```
 
 
