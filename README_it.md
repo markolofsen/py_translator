@@ -4,10 +4,10 @@
 
 ---
 
-Versione = 2.1.4 <br />
+Versione = 2.1.5 <br />
 Nome libreria = py_translator <br />
 Titolo = Free Google Translate API <br />
-Parole chiave = Google API Cloud Translate <br />
+Parole chiave = Google API Cloud Translate, google api translate free <br />
 
 ### Informazioni
 L&#39;obiettivo finale è una semplice applicazione per la traduzione di testo nel terminale. Il testo può essere generato in modo interattivo o programmatico nell&#39;ambiente della shell. Tramite gli argomenti della riga di comando, i descrittori di file o le pipe che generano l&#39;output tradotto che può essere reindirizzato a un file o visualizzato sul terminale.
@@ -27,7 +27,7 @@ https://pypi.org/project/google-api-translate/
 ### Caldo da installare
 
 ```sh
-pip3 install py_translator==2.1.4
+pip3 install py_translator==2.1.5
 ```
 
 
