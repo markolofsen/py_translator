@@ -1,10 +1,10 @@
 <p align="center"><b>🛠️ Этот репозиторий был создан с использованием <a href="https://gitupload.com">GitUpload</a>.</b></p>
 <p align="center"><a href="https://gitupload.com"><img src="https://github.com/markolofsen/py_translator//blob/master/.banners/banner_ru.png?raw=1" /></a></p>
-<p align="center"><b>Languages:</b><br /><a href="https://github.com/markolofsen/py_translator/blob/master/README_de.md">🇩🇪 Deutsch</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README.md">🇬🇧 English</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_es.md">🇪🇸 Spanish</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_fr.md">🇫🇷 French</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_it.md">🇮🇹 Italian</a> | <b>🇷🇺 Russian</b></p>
+<p align="center"><b>Languages:</b><br /><a href="https://github.com/markolofsen/py_translator/blob/master/README_de.md">Deutsch</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README.md">English</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_es.md">Spanish</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_fr.md">French</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_it.md">Italian</a> | <b>Russian</b></p>
 
 ---
 
-Версия = 2.1.8 <br />
+Версия = 2.1.9 <br />
 Название библиотеки = py_translator <br />
 Название = Free Google Translate API <br />
 Ключевые слова = Google API Cloud Translate, google api translate free <br />
@@ -27,7 +27,7 @@ https://pypi.org/project/google-api-translate/
 ### Горячая установка
 
 ```sh
-pip3 install py_translator==2.1.8
+pip3 install py_translator==2.1.9
 ```
 
 

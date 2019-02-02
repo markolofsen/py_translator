@@ -1,10 +1,10 @@
 <p align="center"><b>🛠️ Questo repository è stato creato usando <a href="https://gitupload.com">GitUpload</a>.</b></p>
 <p align="center"><a href="https://gitupload.com"><img src="https://github.com/markolofsen/py_translator//blob/master/.banners/banner_it.png?raw=1" /></a></p>
-<p align="center"><b>Languages:</b><br /><a href="https://github.com/markolofsen/py_translator/blob/master/README_de.md">🇩🇪 Deutsch</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README.md">🇬🇧 English</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_es.md">🇪🇸 Spanish</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_fr.md">🇫🇷 French</a> | <b>🇮🇹 Italian</b> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_ru.md">🇷🇺 Russian</a></p>
+<p align="center"><b>Languages:</b><br /><a href="https://github.com/markolofsen/py_translator/blob/master/README_de.md">Deutsch</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README.md">English</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_es.md">Spanish</a> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_fr.md">French</a> | <b>Italian</b> | <a href="https://github.com/markolofsen/py_translator/blob/master/README_ru.md">Russian</a></p>
 
 ---
 
-Versione = 2.1.8 <br />
+Versione = 2.1.9 <br />
 Nome libreria = py_translator <br />
 Titolo = Free Google Translate API <br />
 Parole chiave = Google API Cloud Translate, google api translate free <br />
@@ -27,7 +27,7 @@ https://pypi.org/project/google-api-translate/
 ### Caldo da installare
 
 ```sh
-pip3 install py_translator==2.1.8
+pip3 install py_translator==2.1.9
 ```
 
 
