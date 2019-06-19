@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 # from googletrans import Translator
 # from py_translator import Translator
 from .client import Translator
