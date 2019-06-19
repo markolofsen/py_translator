@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 from .html_translator import superTranslator, massTranslator, setProxy
 
 import re
